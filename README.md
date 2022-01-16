@@ -5,3 +5,4 @@ This repo follows the [course](https://www.udemy.com/course/50-projects-50-days/
 | Name | Description |
 |-|-|
 |[00-Boilerplate](00-Boilerplate/README.md)|Project template files|
+|[01-Expanding-Cards](01-Expanding-Cards/README.md)|Page with 5 pictures|

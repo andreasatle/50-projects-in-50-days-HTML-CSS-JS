@@ -1,0 +1,220 @@
+/* Import the Muli font from google */
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* * means to set attributes globally. These attributes will be
+ * set everywhere until they are changes elsewhere.
+ */
+* {
+  /* border-box tells the browser to account for any border and
+   * padding in the values you specify for an element's width
+   * and height. If you set an element's width to 100 pixels,
+   * that 100 pixels will include any border or padding you added,
+   * and the content box will shrink to absorb that extra width.
+   * This typically makes it much easier to size elements.
+   */
+  box-sizing: border-box;
+}
+
+/* Attributes for the body element */
+body {
+  /* 
+   * The font-family CSS property specifies a prioritized list of
+   * one or more font family names and/or generic family names for
+   * the selected element.
+   */
+  font-family: "Muli", sans-serif;
+
+  /* Use flex-box */
+  display: flex;
+
+  /* The CSS align-items property sets the align-self value on all
+   * direct children as a group. In Flexbox, it controls the
+   * alignment of items on the Cross Axis. In Grid Layout, it
+   * controls the alignment of items on the Block Axis within their
+   * grid area.
+   */
+  align-items: center;
+
+  /* The CSS justify-content property defines how the browser
+   * distributes space between and around content items along the
+   * main-axis of a flex container, and the inline axis of a grid
+   * container.
+   */
+  justify-content: center;
+
+  /* The height CSS property specifies the height of an element.
+   * By default, the property defines the height of the content area.
+   * If box-sizing is set to border-box, however, it instead determines
+   * the height of the border area.
+   */
+  height: 100vh;
+
+  /* The overflow CSS shorthand property sets the desired behavior for
+   * an element's overflow — i.e. when an element's content is too big
+   * to fit in its block formatting context — in both directions.
+   */
+  overflow: hidden;
+
+  /* The margin CSS shorthand property sets the margin area on all four
+   * sides of an element.
+   */
+  margin: 0;
+}
+
+/* Attributes for the container class */
+.container {
+  /* Use flex-box */
+  display: flex;
+
+  /* The width CSS property sets an element's width. By default, it sets
+   * the width of the content area, but if box-sizing is set to border-box,
+   * it sets the width of the border area.
+   */
+  width: 90vw;
+}
+
+/* Attributes for the panel class */
+.panel {
+  /* The background-size CSS property sets the size of the element's
+   * background image. The image can be left to its natural size,
+   * stretched, or constrained to fit the available space.
+   */
+  background-size: cover;
+
+  /* The background-position CSS property sets the initial position
+   * for each background image. The position is relative to the
+   * position layer set by background-origin.
+   */
+  background-position: center;
+
+  /* The background-repeat CSS property sets how background images
+   * are repeated. A background image can be repeated along the
+   * horizontal and vertical axes, or not repeated at all.
+   */
+  background-repeat: no-repeat;
+
+  /* The height CSS property specifies the height of an element.
+   * By default, the property defines the height of the content area.
+   * If box-sizing is set to border-box, however, it instead determines
+   * the height of the border area.
+   */
+  height: 80vh;
+
+  /* The border-radius CSS property rounds the corners of an element's
+   * outer border edge. You can set a single radius to make circular
+   * corners, or two radii to make elliptical corners.
+   */
+  border-radius: 50px;
+
+  /* The color CSS property sets the foreground color value of an element's
+   * text and text decorations, and sets the <currentcolor> value.
+   * currentcolor may be used as an indirect value on other properties and
+   * is the default for other color properties, such as border-color.
+   */
+  color: #fff;
+
+  /* The cursor CSS property sets the mouse cursor, if any, to show when
+   * the mouse pointer is over an element.
+   */
+  cursor: pointer;
+
+  /* The flex CSS shorthand property sets how a flex item will grow or
+   * shrink to fit the space available in its flex container.
+   */
+  flex: 0.5;
+
+  /* The margin CSS shorthand property sets the margin area on all four
+   * sides of an element.
+   */
+  margin: 10px;
+
+  /* The position CSS property sets how an element is positioned in a
+   * document.
+   */
+  position: relative;
+
+  /* Transitions enable you to define the transition between two states
+   * of an element. Different states may be defined using pseudo-classes
+   * like :hover or :active or dynamically set using JavaScript.
+   */
+  transition: flex 0.7s ease-in;
+}
+
+/* Attributes for h3 elements inside the panel class */
+.panel h3 {
+  /* The font-size CSS property sets the size of the font. Changing the
+   * font size also updates the sizes of the font size-relative
+   * <length> units, such as em, ex, and so forth.
+   */
+  font-size: 24px;
+
+  /* The position CSS property sets how an element is positioned
+   * in a document.
+   */
+  position: absolute;
+
+  /* The bottom CSS property participates in setting the vertical
+   * position of a positioned element. It has no effect on
+   * non-positioned elements.
+   */
+  bottom: 20px;
+
+  /* The left CSS property participates in specifying the horizontal
+   * position of a positioned element. It has no effect on
+   * non-positioned elements.
+   */
+  left: 20px;
+
+  /* The margin CSS shorthand property sets the margin area on all four
+   * sides of an element.
+   */
+  margin: 0;
+
+  /* The opacity CSS property sets the opacity of an element. Opacity
+   * is the degree to which content behind an element is hidden,
+   * and is the opposite of transparency.
+   */
+  opacity: 0;
+}
+
+/* Attributes for elements with both panel and active classes */
+.panel.active {
+  flex: 5;
+}
+
+/* Attributes for h3 elements within both panel and active classes */
+.panel.active h3 {
+  /* The opacity CSS property sets the opacity of an element. Opacity
+   * is the degree to which content behind an element is hidden,
+   * and is the opposite of transparency.
+   */
+  opacity: 1;
+
+  /* Transitions enable you to define the transition between two states
+   * of an element. Different states may be defined using pseudo-classes
+   * like :hover or :active or dynamically set using JavaScript.
+   */
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* The @media CSS at-rule can be used to apply part of a style sheet
+ * based on the result of one or more media queries. With it, you
+ * specify a media query and a block of CSS to apply to the document
+ * if and only if the media query matches the device on which the
+ * content is being used.
+ */
+@media (max-width: 600px) {
+  /* Attributes for the container class */
+  .container {
+    width: 100vw;
+  }
+
+  /* The :nth-of-type() CSS pseudo-class matches elements based on their
+   * position among siblings of the same type (tag name).
+   */
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    /* Suppress the element */
+    display: none;
+  }
+}
