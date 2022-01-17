@@ -1,0 +1,303 @@
+/* Import the Muli font from google */
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* Set some variables */
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+}
+
+/* Default settings (using *) */
+* {
+  box-sizing: border-box;
+}
+
+/* Attributes for the body element */
+body {
+  /* 
+   * The font-family CSS property specifies a prioritized list of
+   * one or more font family names and/or generic family names for
+   * the selected element.
+   */
+  font-family: "Muli", sans-serif;
+
+  /* The background-color CSS property sets the background color
+   * of an element.
+   */
+  background-color: #f6f7fb;
+
+  /* Use flex-box */
+  display: flex;
+
+  /* The CSS align-items property sets the align-self value on all
+   * direct children as a group. In Flexbox, it controls the
+   * alignment of items on the Cross Axis. In Grid Layout, it
+   * controls the alignment of items on the Block Axis within their
+   * grid area.
+   */
+  align-items: center;
+
+  /* The CSS justify-content property defines how the browser
+   * distributes space between and around content items along the
+   * main-axis of a flex container, and the inline axis of a grid
+   * container.
+   */
+  justify-content: center;
+
+  /* The height CSS property specifies the height of an element.
+   * By default, the property defines the height of the content area.
+   * If box-sizing is set to border-box, however, it instead determines
+   * the height of the border area.
+   */
+  height: 100vh;
+
+  /* The overflow CSS shorthand property sets the desired behavior for
+   * an element's overflow — i.e. when an element's content is too big
+   * to fit in its block formatting context — in both directions.
+   */
+  overflow: hidden;
+
+  /* The margin CSS shorthand property sets the margin area on all four
+   * sides of an element.
+   */
+  margin: 0;
+}
+
+.container {
+  /* The text-align CSS property sets the horizontal alignment of
+   * the content inside a block element or table-cell box.
+   */
+  text-align: center;
+}
+
+.progress-container {
+  /* Use flex-box */
+  display: flex;
+
+  /* The CSS justify-content property defines how the browser
+   * distributes space between and around content items along the
+   * main-axis of a flex container, and the inline axis of a grid
+   * container.
+   */
+  justify-content: space-between;
+
+  /* The position CSS property sets how an element is positioned
+   * in a document.
+   */
+  position: relative;
+
+  /* The margin-bottom CSS property sets the margin area on the
+   * bottom of an element. A positive value places it farther
+   * from its neighbors, while a negative value places it closer.
+   */
+  margin-bottom: 30px;
+
+  /* The max-width CSS property sets the maximum width of an
+   * element.
+   */
+  max-width: 100%;
+
+  /* The width CSS property sets an element's width. By default, it sets
+   * the width of the content area, but if box-sizing is set to border-box,
+   * it sets the width of the border area.
+   */
+  width: 350px;
+}
+
+/* In CSS, ::before creates a pseudo-element that is the first child of
+ * the selected element. It is often used to add cosmetic content to an
+ * element with the content property. It is inline by default.
+ */
+.progress-container::before {
+  /* The content CSS property replaces an element with a generated value.
+   * Objects inserted using the content property are anonymous replaced
+   * elements.
+   */
+  content: "";
+
+  /* The background-color CSS property sets the background color
+   * of an element.
+   */
+  background-color: var(--line-border-empty);
+
+  /* The position CSS property sets how an element is positioned
+   * in a document.
+   */
+  position: absolute;
+
+  /* The top CSS property participates in specifying the
+   * vertical position of a positioned element.
+   */
+  top: 50%;
+
+  /* The left CSS property participates in specifying the
+   * horizontal position of a positioned element.
+   */
+  left: 0;
+
+  /* The transform CSS property lets you rotate, scale, skew,
+   * or translate an element. It modifies the coordinate space
+   * of the CSS visual formatting model.
+   */
+  transform: translateY(-50%);
+
+  /* The height CSS property specifies the height of an element.
+   * By default, the property defines the height of the content
+   * area. If box-sizing is set to border-box, however, it
+   * instead determines the height of the border area.
+   */
+  height: 4px;
+
+  /* The width CSS property sets an element's width. By default,
+   * it sets the width of the content area, but if box-sizing is
+   * set to border-box, it sets the width of the border area.
+   */
+  width: 100%;
+
+  /* The z-index CSS property sets the z-order of a positioned
+   * element and its descendants or flex items. Overlapping
+   * elements with a larger z-index cover those with a smaller one.
+   */
+  z-index: -1;
+}
+
+.progress {
+  /* The background-color CSS property sets the background color
+   * of an element.
+   */
+  background-color: var(--line-border-fill);
+
+  /* The position CSS property sets how an element is positioned
+   * in a document.
+   */
+  position: absolute;
+
+  /* The top CSS property participates in specifying the
+   * vertical position of a positioned element.
+   */
+  top: 50%;
+
+  /* The left CSS property participates in specifying the
+   * horizontal position of a positioned element.
+   */
+  left: 0;
+
+  /* The transform CSS property lets you rotate, scale, skew,
+   * or translate an element. It modifies the coordinate space
+   * of the CSS visual formatting model.
+   */
+  transform: translateY(-50%);
+
+  /* The height CSS property specifies the height of an element.
+   * By default, the property defines the height of the content area.
+   * If box-sizing is set to border-box, however, it instead determines
+   * the height of the border area.
+   */
+  height: 4px;
+
+  /* The max-width CSS property sets the maximum width of an
+   * element.
+   */
+  width: 0%;
+
+  /* The z-index CSS property sets the z-order of a positioned
+   * element and its descendants or flex items. Overlapping
+   * elements with a larger z-index cover those with a smaller one.
+   */
+  z-index: -1;
+
+  /* The transition CSS property is a shorthand property for
+   * transition-property, transition-duration,
+   * transition-timing-function, and transition-delay.
+   */
+  transition: 0.4s ease;
+}
+
+.circle {
+  /* The background-color CSS property sets the background color
+   * of an element.
+   */
+  background-color: #fff;
+
+  /* The color CSS property sets the foreground color value of an
+   * element's text and text decorations, and sets the <currentcolor>
+   * value. currentcolor may be used as an indirect value on other
+   * properties and is the default for other color properties, such
+   * as border-color.
+   */
+  color: #999;
+
+  /* The border-radius CSS property rounds the corners of an element's
+   * outer border edge. You can set a single radius to make circular
+   * corners, or two radii to make elliptical corners.
+   */
+  border-radius: 50%;
+
+  /* The height CSS property specifies the height of an element.
+   * By default, the property defines the height of the content area.
+   * If box-sizing is set to border-box, however, it instead determines
+   * the height of the border area.
+   */
+  height: 30px;
+
+  /* The max-width CSS property sets the maximum width of an
+   * element.
+   */
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--line-border-empty);
+
+  /* The transition CSS property is a shorthand property for
+   * transition-property, transition-duration,
+   * transition-timing-function, and transition-delay.
+   */
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+}
+
+.btn {
+  /* The background-color CSS property sets the background color
+   * of an element.
+   */
+  background-color: var(--line-border-fill);
+  color: #fff;
+  border: 0;
+  /* The border-radius CSS property rounds the corners of an element's
+   * outer border edge. You can set a single radius to make circular
+   * corners, or two radii to make elliptical corners.
+   */
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active {
+  /* The transform CSS property lets you rotate, scale, skew,
+   * or translate an element. It modifies the coordinate space
+   * of the CSS visual formatting model.
+   */
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  /* The outline CSS shorthand property set all the outline
+   * properties in a single declaration.
+   */
+  outline: 0;
+}
+
+.btn:disabled {
+  /* The background-color CSS property sets the background color
+   * of an element.
+   */
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}
