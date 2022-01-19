@@ -279,6 +279,11 @@ body {
   font-size: 14px;
 }
 
+/* The :active CSS pseudo-class represents an element (such as
+ * a button) that is being activated by the user. When using a
+ * mouse, "activation" typically starts when the user presses
+ * down the primary mouse button.
+ */
 .btn:active {
   /* The transform CSS property lets you rotate, scale, skew,
    * or translate an element. It modifies the coordinate space
@@ -287,6 +292,11 @@ body {
   transform: scale(0.98);
 }
 
+/* The :focus CSS pseudo-class represents an element (such as
+ * a form input) that has received focus. It is generally
+ * triggered when the user clicks or taps on an element or
+ * selects it with the keyboard's Tab key.
+ */
 .btn:focus {
   /* The outline CSS shorthand property set all the outline
    * properties in a single declaration.
@@ -294,6 +304,12 @@ body {
   outline: 0;
 }
 
+/* The :disabled CSS pseudo-class represents any disabled
+ * element. An element is disabled if it can't be activated
+ * (selected, clicked on, typed into, etc.) or accept focus.
+ * The element also has an enabled state, in which it can be
+ * activated or accept focus.
+ */
 .btn:disabled {
   /* The background-color CSS property sets the background color
    * of an element.
