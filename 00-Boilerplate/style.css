@@ -5,12 +5,52 @@
 }
 
 body {
+  /* 
+   * The font-family CSS property specifies a prioritized list of
+   * one or more font family names and/or generic family names for
+   * the selected element.
+   */
   font-family: "Roboto", sans-serif;
+
+  /* Use flex-box */
   display: flex;
+
+  /* The flex-direction CSS property sets how flex items are placed
+   * in the flex container defining the main axis and the direction
+   * (normal or reversed).
+   */
   flex-direction: column;
+
+  /* The CSS align-items property sets the align-self value on all
+   * direct children as a group. In Flexbox, it controls the
+   * alignment of items on the Cross Axis. In Grid Layout, it
+   * controls the alignment of items on the Block Axis within their
+   * grid area.
+   */
   align-items: center;
+
+  /* The CSS justify-content property defines how the browser
+   * distributes space between and around content items along the
+   * main-axis of a flex container, and the inline axis of a grid
+   * container.
+   */
   justify-content: center;
+
+  /* The height CSS property specifies the height of an element.
+   * By default, the property defines the height of the content area.
+   * If box-sizing is set to border-box, however, it instead determines
+   * the height of the border area.
+   */
   height: 100vh;
+
+  /* The overflow CSS shorthand property sets the desired behavior for
+   * an element's overflow — i.e. when an element's content is too big
+   * to fit in its block formatting context — in both directions.
+   */
   overflow: hidden;
+
+  /* The margin CSS shorthand property sets the margin area on all four
+   * sides of an element.
+   */
   margin: 0;
 }
