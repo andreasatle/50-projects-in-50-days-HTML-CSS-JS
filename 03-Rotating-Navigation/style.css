@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* 
+   * The font-family CSS property specifies a prioritized list of
+   * one or more font family names and/or generic family names for
+   * the selected element.
+   */
+  font-family: "Lato", sans-serif;
+
+  /* The background-color CSS property sets the background color of an
+   * element.
+   */
+  background-color: #333;
+
+  /* The color CSS property sets the foreground color value of an
+   * element's text and text decorations, and sets the
+   * <currentcolor> value.
+   */
+  color: #222;
+
+  /* The overflow-x CSS property sets what shows when content overflows
+   * a block-level element's left and right edges. This may be nothing,
+   * a scroll bar, or the overflow content.  overflow-x: hidden;
+   */
+  overflow-x: hidden;
+
+  /* The overflow-y CSS property sets what shows when content overflows
+   * a block-level element's top and bottom edges. This may be nothing,
+   * a scroll bar, or the overflow content.  overflow-y: scroll;
+   */
+  overflow-y: scroll;
+
+  /* The margin CSS shorthand property sets the margin area on all four
+   * sides of an element.
+   */
+  margin: 0;
+}
+
+.container {
+  /* The background-color CSS property sets the background color of an
+   * element.
+   */
+  background-color: #fafafa;
+
+  /* The transform-origin CSS property sets the origin for an element's
+   * transformations.
+   */
+  transform-origin: top left;
+
+  /* The transition CSS property is a shorthand property for
+   * transition-property, transition-duration,
+   * transition-timing-function, and transition-delay.
+   */
+  transition: transform 0.5s linear;
+
+  /* The width CSS property sets an element's width. By default, it sets
+   * the width of the content area, but if box-sizing is set to border-box,
+   * it sets the width of the border area.
+   */
+  width: 100vw;
+
+  /* The min-height CSS property sets the minimum height of an element.
+   * It prevents the used value of the height property from becoming
+   * smaller than the value specified for min-height.
+   */
+  min-height: 100vh;
+
+  /* The padding CSS shorthand property sets the padding area on all four
+   * sides of an element at once.
+   */
+  padding: 50px;
+}
+
+.container.show-nav {
+  /* The transform CSS property lets you rotate, scale, skew, or translate
+   * an element. It modifies the coordinate space of the CSS visual
+   * formatting model.
+   */
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  /* The position CSS property sets how an element is positioned in a
+   * document. The top, right, bottom, and left properties determine the
+   * final location of positioned elements.
+   * position: fixed; : 
+   * The element is removed from the normal document flow, and no space
+   * is created for the element in the page layout. It is positioned
+   * relative to the initial containing block established by the viewport,
+   * except when one of its ancestors has a transform, perspective, or
+   * filter property set to something other than none (see the CSS
+   * Transforms Spec), in which case that ancestor behaves as the
+   * containing block.
+   */
+  position: fixed;
+  /* The top CSS property participates in specifying the vertical
+   * position of a positioned element. It has no effect on
+   * non-positioned elements.
+   */
+  top: -100px;
+
+  /* The left CSS property participates in specifying the horizontal
+   * position of a positioned element. It has no effect on
+   * non-positioned elements.
+   */
+  left: -100px;
+}
+
+.circle {
+  /* The background-color CSS property sets the background color of an
+   * element.
+   */
+  background-color: #ff7979;
+
+  /* The height CSS property specifies the height of an element. By default,
+   * the property defines the height of the content area. If box-sizing is
+   * set to border-box, however, it instead determines the height of the
+   * border area.
+   */
+  height: 200px;
+
+  /* The width CSS property sets an element's width. By default, it sets
+   * the width of the content area, but if box-sizing is set to border-box,
+   * it sets the width of the border area.
+   */
+  width: 200px;
+
+  /* The border-radius CSS property rounds the corners of an element's outer
+   * border edge. You can set a single radius to make circular corners, or
+   * two radii to make elliptical corners.
+   */
+  border-radius: 50%;
+
+  /* The position CSS property sets how an element is positioned in a document.
+   * The top, right, bottom, and left properties determine the final location
+   * of positioned elements.
+   */
+  position: relative;
+
+  /* The transition CSS property is a shorthand property for transition-property,
+   * transition-duration, transition-timing-function, and transition-delay.
+   */
+  transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+  /* The transform CSS property lets you rotate, scale, skew, or translate an
+   * element. It modifies the coordinate space of the CSS visual formatting model.
+   */
+  transform: rotate(-70deg);
+}
+
+.circle button {
+  /* The cursor CSS property sets the mouse cursor, if any, to show when the mouse
+   * pointer is over an element.
+   */
+  cursor: pointer;
+
+  /* The position CSS property sets how an element is positioned in a document.
+   * The top, right, bottom, and left properties determine the final location of
+   * positioned elements.
+   */
+  position: absolute;
+
+  /* The top CSS property participates in specifying the vertical position of a
+   * positioned element. It has no effect on non-positioned elements.
+   */
+  top: 50%;
+
+  /* The left CSS property participates in specifying the horizontal position of
+   * a positioned element. It has no effect on non-positioned elements.
+   */
+  left: 50%;
+
+  /* The height CSS property specifies the height of an element. By default, the
+   * property defines the height of the content area. If box-sizing is set to
+   * border-box, however, it instead determines the height of the border area.
+   */
+  height: 100px;
+
+  /* The background shorthand CSS property sets all background style properties
+   * at once, such as color, image, origin and size, or repeat method.
+   */
+  background: transparent;
+
+  /* The border shorthand CSS property sets an element's border. It sets the
+   * values of border-width, border-style, and border-color.
+   */
+  border: 0;
+
+  /* The font-size CSS property sets the size of the font. Changing the font
+   * size also updates the sizes of the font size-relative <length> units,
+   * such as em, ex, and so forth.
+   */
+  font-size: 26px;
+
+  /* The color CSS property sets the foreground color value of an element's text
+   * and text decorations, and sets the <currentcolor> value. currentcolor may
+   * be used as an indirect value on other properties and is the default for
+   * other color properties, such as border-color.
+   */
+  color: #fff;
+}
+
+/* The :focus CSS pseudo-class represents an element (such as a form input) that
+ * has received focus. It is generally triggered when the user clicks or taps on
+ * an element or selects it with the keyboard's Tab key.
+ */
+.circle button:focus {
+  /* The outline CSS shorthand property set all the outline properties in a single
+   * declaration.
+   */
+  outline: none;
+}
+
+.circle button#open {
+  /* The left CSS property participates in specifying the horizontal
+   * position of a positioned element. It has no effect on
+   * non-positioned elements.
+   */
+  left: 60%;
+}
+
+.circle button#close {
+  /* The top CSS property participates in specifying the vertical
+   * position of a positioned element. It has no effect on
+   * non-positioned elements.
+   */
+  top: 60%;
+
+  /* The transform CSS property lets you rotate, scale, skew, or translate
+   * an element. It modifies the coordinate space of the CSS visual
+   * formatting model.
+   */
+  transform: rotate(90deg);
+
+  /* The transform-origin CSS property sets the origin for an element's
+   * transformations.
+   */
+  transform-origin: top left;
+}
+
+/* The “+” sign selector is used to select the elements that are placed
+ * immediately after the specified element but not inside the particular
+ * elements.
+ */
+.container.show-nav + nav li {
+  /* The transform CSS property lets you rotate, scale, skew, or translate
+   * an element. It modifies the coordinate space of the CSS visual
+   * formatting model.
+   */
+  transform: translateX(0);
+
+  /* The transition-delay CSS property specifies the duration to wait before
+   * starting a property's transition effect when its value changes.
+   */
+  transition-delay: 0.2s;
+}
+
+nav {
+  /* The position CSS property sets how an element is positioned in a
+   * document. The top, right, bottom, and left properties determine the
+   * final location of positioned elements.
+   */
+  position: fixed;
+
+  /* The bottom CSS property participates in setting the vertical position
+   * of a positioned element. It has no effect on non-positioned elements.
+   */
+  bottom: 40px;
+
+  /* The left CSS property participates in specifying the horizontal
+   * position of a positioned element. It has no effect on
+   * non-positioned elements.
+   */
+  left: 0;
+
+  /* The z-index CSS property sets the z-order of a positioned element and
+   * its descendants or flex items. Overlapping elements with a larger
+   * z-index cover those with a smaller one. 
+   */
+  z-index: 100;
+}
+
+nav ul {
+  /* The list-style-type CSS property sets the marker (such as a disc,
+   * character, or custom counter style) of a list item element.
+   */
+  list-style-type: none;
+
+  /* The padding-left CSS property sets the width of the padding area
+   * to the left of an element.
+   */
+  padding-left: 30px;
+}
+
+nav ul li {
+  /* The text-transform CSS property specifies how to capitalize an
+   * element's text. It can be used to make text appear in all-uppercase
+   * or all-lowercase, or with each word capitalized. It also can help
+   * improve legibility for ruby.
+   */
+  text-transform: uppercase;
+
+  /* The color CSS property sets the foreground color value of an
+   * element's text and text decorations, and sets the <currentcolor>
+   * value. currentcolor may be used as an indirect value on other
+   * properties and is the default for other color properties, such as
+   * border-color.
+   */
+  color: #fff;
+
+  /* The margin CSS shorthand property sets the margin area on all four
+   * sides of an element.
+   */
+  margin: 40px 0;
+
+  /* The transform CSS property lets you rotate, scale, skew, or translate
+   * an element. It modifies the coordinate space of the CSS visual
+   * formatting model.
+   */
+  transform: translateX(-100%);
+
+  /* The transition CSS property is a shorthand property for
+   * transition-property, transition-duration,
+   * transition-timing-function, and transition-delay.
+   */
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  /* The font-size CSS property sets the size of the font. Changing the
+   * font size also updates the sizes of the font size-relative <length>
+   * units, such as em, ex, and so forth.
+   */
+  font-size: 20px;
+
+  /* The margin-right CSS property sets the margin area on the right side
+   * of an element. A positive value places it farther from its neighbors,
+   * while a negative value places it closer.
+   */
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  /* The margin-left CSS property sets the margin area on the left side of
+   * an element. A positive value places it farther from its neighbors,
+   * while a negative value places it closer.
+   */
+  margin-left: 15px;
+
+  /* The transform CSS property lets you rotate, scale, skew, or translate
+   * an element. It modifies the coordinate space of the CSS visual
+   * formatting model.
+   */
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+
+  /* The transform CSS property lets you rotate, scale, skew, or translate
+   * an element. It modifies the coordinate space of the CSS visual
+   * formatting model.
+   */
+  transform: translateX(-200%);
+}
+
+nav a {
+  /* The color CSS property sets the foreground color value of an
+   * element's text and text decorations, and sets the <currentcolor>
+   * value. currentcolor may be used as an indirect value on other
+   * properties and is the default for other color properties, such as
+   * border-color.
+   */
+  color: #fafafa;
+
+  /* The text-decoration shorthand CSS property sets the appearance of
+   * decorative lines on text. It is a shorthand for text-decoration-line,
+   * text-decoration-color, text-decoration-style, and the newer
+   * text-decoration-thickness property.
+   */
+  text-decoration: none;
+
+  /* The transition CSS property is a shorthand property for
+   * transition-property, transition-duration,
+   * transition-timing-function, and transition-delay.
+   */
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  /* The color CSS property sets the foreground color value of an
+   * element's text and text decorations, and sets the <currentcolor>
+   * value. currentcolor may be used as an indirect value on other
+   * properties and is the default for other color properties, such as
+   * border-color.
+   */
+  color: #ff7979;
+
+  /* The font-weight CSS property sets the weight (or boldness) of the
+   * font. The weights available depend on the font-family that is
+   * currently set.
+   */
+  font-weight: bold;
+}
+
+.content img {
+  /* The max-width CSS property sets the maximum width of an element.
+   * It prevents the used value of the width property from becoming
+   * larger than the value specified by max-width.
+   */
+  max-width: 100%;
+}
+
+.content {
+  /* The max-width CSS property sets the maximum width of an element.
+   * It prevents the used value of the width property from becoming
+   * larger than the value specified by max-width.
+   */
+  max-width: 1000px;
+
+  /* The margin CSS shorthand property sets the margin area on all four
+   * sides of an element.
+   */
+  margin: 50px auto;
+}
+
+.content h1 {
+  /* The margin CSS shorthand property sets the margin area on all four
+   * sides of an element.
+   */
+  margin: 0;
+}
+
+.content small {
+  /* The color CSS property sets the foreground color value of an
+   * element's text and text decorations, and sets the <currentcolor>
+   * value. currentcolor may be used as an indirect value on other
+   * properties and is the default for other color properties, such as
+   * border-color.
+   */
+  color: #555;
+
+  /* The font-style CSS property sets whether a font should be styled with
+  * a normal, italic, or oblique face from its font-family.
+  */
+  font-style: italic;
+}
+
+.content p {
+  /* The color CSS property sets the foreground color value of an
+   * element's text and text decorations, and sets the <currentcolor>
+   * value. currentcolor may be used as an indirect value on other
+   * properties and is the default for other color properties, such as
+   * border-color.
+   */
+  color: #333;
+
+  /* The line-height CSS property sets the height of a line box. It's
+   * commonly used to set the distance between lines of text. On
+   * block-level elements, it specifies the minimum height of line
+   * boxes within the element. On non-replaced inline elements, it
+   * specifies the height that is used to calculate line box height.
+   */
+  line-height: 1.5;
+}
